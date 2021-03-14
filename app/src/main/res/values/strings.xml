@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Movie and Tv</string>
+    <string name="watch_movie">Watch Movie and Tv</string>
+    <string name="welcome">Watch Movie...</string>
+    <string name="title">title</string>
+    <string name="description">Description</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting">pengaturan</string>
+    <string name="tab_text_1">Movies</string>
+    <string name="tab_text_2">Tv Show</string>
+    <string name="share_text">Judul Film/Tv</string>
+</resources>

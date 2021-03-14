@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.detail.MovieActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        app:cardElevation="5dp"
+        android:clickable="true"
+        android:backgroundTint="#FFFFFF"
+        android:foreground="?selectableItemBackground"
+        android:layout_margin="10dp"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:padding="8dp">
+
+
+            <ImageView
+                android:id="@+id/imageMovie"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/textTitMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-133dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/imageMovie"
+                android:text="@string/title"
+                android:textColor="#5B1A05"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textDesMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTitMovie"
+                android:layout_marginStart="-140dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toEndOf="@id/imageMovie"
+                android:text="@string/description"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</TableLayout>
